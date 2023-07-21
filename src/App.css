@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +23,30 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 @keyframes App-logo-spin {
