@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import TheamContext from './TheamContext';
+import TheamContext from '../TheamContext';
 import  "../App.css";
 
 function Content() {

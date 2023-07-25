@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import TheamContext from './TheamContext';
 import TheamChanger from './TheamChanger';
-import Content from './Content';
+import Content from './FetchApi/Content';
 import FetchTest from './FetchTest';
-import  "../App.css";
+
 function TheamConverter() {
 
 const[IsDark,ChangeTheam]=useState(false);

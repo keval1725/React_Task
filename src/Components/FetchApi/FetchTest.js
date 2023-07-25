@@ -1,19 +1,21 @@
 import React, { useState,useEffect,useContext } from 'react';
 // import CounterParrents from './CounterParrents';
 import TheamContext from './TheamContext';
-import '../App.css';
+import './Fetch.css';
+import axios from 'axios';
+
 
 function FetchTest() {
     const[search,SetSearch]=useState("");
     const[Data,SetData]=useState([]);
     const[filterdatas,setFilterdatas]=useState([]);
-    const{IsDark} = useContext(TheamContext);
+    // const{IsDark} = useContext(TheamContext);
 
 
     const Fetchdata = async ()=>{
         try{
-            const response = await fetch("https://jsonplaceholder.typicode.com/users");
-                const data = await response.json();
+            const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+                const data = response.data;
                 console.log(data);
                 SetData(data);
            
@@ -27,7 +29,7 @@ function FetchTest() {
       },[]);
      
         const serchValue =(e)=>{
-            SetSearch(e.target.value);
+            SetSearch(e.target.value);  
             filterData(search);
            
           }
@@ -46,7 +48,7 @@ function FetchTest() {
         }
           
           return (
-            <div className={IsDark?"dark container" :"light container"}>
+            <div >
         
             <input type="text" className="form-control w-25 mb-3" onChange={serchValue} placeholder='Serch Here'  />
             {/* <CounterParrents/> */}
