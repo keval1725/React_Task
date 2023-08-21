@@ -8,8 +8,7 @@ function Protected(props) {
     useEffect(()=>{
        
           let login =  localStorage.getItem('login');
-     
-          if(login == null){
+               if(login === false){
             Navigate('Login')
           }
       

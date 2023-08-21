@@ -1,0 +1,21 @@
+/* Custom CSS for FirstPost component */
+.container {
+    max-width: 800px; /* Optional: Set a max-width to limit the container width */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the cards */
+  }
+  
+  .post-image-container {
+    overflow: hidden; /* Hide any overflowing content */
+    border-radius: 4px 4px 0 0; /* Round the top corners of the container */
+  }
+  
+  .post-image {
+    width: 100%; /* Ensure the image fills the container */
+    height: 200px; /* Set the desired height for the cropped image */
+    object-fit: cover; /* Crop the image to fit the container */
+    object-position: center; /* Center the cropped portion of the image */
+  }
+  

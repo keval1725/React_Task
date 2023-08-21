@@ -7,7 +7,7 @@ function TheamChanger() {
 
   return (
     <div>
-      <button >gdryt</button>
+      <button>gdryt</button>
     </div>
   )
 }
